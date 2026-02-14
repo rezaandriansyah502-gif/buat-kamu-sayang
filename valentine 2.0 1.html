@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruang Kenangan Cinta - Hadiah Valentine Khusus</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f8e8e8, #ffe4e1);
+            color: #5d4e37;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .section {
+            margin: 50px 0;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s ease;
+        }
+        .section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        h1, h2 {
+            text-align: center;
+            color: #8b5a3c;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 1.1em;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .interactive {
+            cursor: pointer;
+            transition: transform 0.3s ease, color 0.3s ease;
+            color: #ff69b4;
+        }
+        .interactive:hover {
+            transform: scale(1.05);
+            color: #8b5a3c;
+        }
+        .heart {
+            font-size: 2em;
+            color: #ff69b4;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        .surprise-part {
+            display: none;
+            margin: 20px 0;
+            padding: 15px;
+            background: #fff5f5;
+            border-radius: 10px;
+            border-left: 5px solid #ff69b4;
+            animation: fadeIn 1s ease;
+        }
+        .surprise-part.show {
+            display: block;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background: #8b5a3c;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .button:hover {
+            background: #a0674a;
+        }
+        .memory {
+            margin: 20px 0;
+            padding: 15px;
+            background: #fff5f5;
+            border-left: 5px solid #ff69b4;
+            border-radius: 10px;
+        }
+        .illustration {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .illustration img {
+            max-width: 200px;
+            height: auto;
+            border-radius: 10px;
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s ease;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Halaman Pembuka -->
+        <div class="section visible">
+            <h1>Ruang Kenangan Cinta <span class="heart">❤️</span></h1>
+            <p>Hai, sayang. Di tengah kesibukan kita masing-masing dan jarak yang memisahkan, aku buat dunia kecil ini khusus untukmu. Tempat di mana rindu kita bisa bertemu tanpa layar. Ada rahasia yang aku simpan, kenangan yang membuatku tersenyum setiap kali ingat kamu. Siapkah kamu membuka pintu ini? Klik dan mari kita mulai perjalanan kecil ini bersama. 😊</p>
+            <button class="button" onclick="nextSection(1)">Masuk ke Dunia Kita</button>
+        </div>
+
+        <!-- Section 1: Cerita Perjalanan Cinta dalam LDR -->
+        <div class="section" id="section1">
+            <h2>Perjalanan Kita: Dari Panggilan Pertama Hingga Sekarang</h2>
+            <p>Ingat ga awal kita kenal dimana? Kamu yang tiba tiba masuk room podcast dengan suara yang lucu lembut, aku yang tak bisa berhenti tersenyum. LDR ini bukan mudah, dengan jadwal sibuk dan waktu yang jarang bertemu. Tapi setiap telepon malam-malam, meski sebentar, bikin aku yakin: cinta kita seperti sinyal yang kuat, tak pernah putus meski jarak ribuan kilometer. Ada malam-malam aku nunggu pesanmu, dan itu justru yang bikin aku lebih jatuh cinta. asekk asekk</p>
+            <div class="illustration">
+            </div>
+            <p class="interactive" onclick="nextSection(2)">Klik untuk lanjut ke momen-momen rindu kita...</p>
+        </div>
+
+        <!-- Section 2: Momen Bermakna dalam LDR -->
+        <div class="section" id="section2">
+            <h2>Momen-Momen Sederhana yang Penuh Rindu</h2>
+            <div class="memory">
+                <p><strong>Telepon tengah malam:</strong> Kamu bilang, "Aku ada cerita" Dan aku langsung merasa dekat, meski layar memisahkan. Nostalgia banget, ya? Sekarang aku sering tutup mata dan bayangin kita lagi di sana.</p>
+            </div>
+            <div class="memory">
+                <p><strong>Ketawa kecil kamu:</strong> Walau hanya ketawa ringan, tapi bikin aku merasa kamu di sini. Lucu ya, hal kecil seperti itu yang paling aku rindukan di LDR ini.</p>
+            </div>
+            <div class="memory">
+                <p><strong>Ciuman manis kamu:</strong> Walau kadang ga kedengeran sih HAHAHA, dan aku jatuh cinta lagi. Jarak bikin kita lebih menghargai waktu bersama, meski virtual.</p>
+            </div>
+            <div class="illustration">
+            </div>
+            <p class="interactive" onclick="nextSection(3)">Hover di sini untuk lanjut ke hal-hal yang aku suka dari kamu...</p>
+        </div>
+
+        <!-- Section 3: Hal-Hal yang Disukai -->
+        <div class="section" id="section3">
+            <h2>Hal-Hal yang Aku Sukai dari Kamu (Diam-Diam)</h2>
+            <p>Aku suka cara kamu bilang "hallowww" dengan suara pelan di telepon. Aku suka bagaimana kamu selalu kirim foto makanan kesukaanmu, meski aku tak bisa makan bareng. Dan yang paling? Cara kamu bikin LDR ini terasa seperti petualangan, bukan beban. Kamu bikin hidupku lebih hangat, sayang, meski kita terpisah.</p>
+            <div class="illustration">
+            </div>
+            <p>Scroll perlahan ke bawah... ada kejutan yang aku simpan khusus untukmu. Jangan buru-buru, ya? ❤️</p>
+        </div>
+
+        <!-- Surprise Section: Teks Spesifik Disusun Bertahap -->
+        <div class="section visible" id="surprise">
+            <h2>Kejutan Terakhir: Surat dari Hatiku</h2>
+            <p>Bayangkan ini seperti membuka surat yang aku tulis pelan-pelan, setiap kata lahir dari rindu yang tak pernah habis. Klik bagian demi bagian untuk membacanya, seperti membuka lapisan perasaan satu per satu.</p>
+            <div class="surprise-part" id="part1">
+                <p>Di hari Valentine ini, aku tidak membawa bunga mawar yang harum, tidak juga cokelat yang manisnya cepat habis.</p>
+                <button class="button" onclick="showPart(2)">Buka Bagian Selanjutnya</button>
+            </div>
+            <div class="surprise-part" id="part2">
+                <p>Yang kubawa hanya satu hal yang tak pernah berkurang: rindu.</p>
+                <p>Rindu yang diam-diam tumbuh seperti senja yang pelan,</p>
+                <p>menyelinap di antara detik-detik panjang tanpa suaramu.</p>
+                <button class="button" onclick="showPart(3)">Lanjutkan Membaca...</button>
+            </div>
+            <div class="surprise-part" id="part3">
+                <p>Aku kangen… kangen yang bukan sekadar ingin menyapa,</p>
+                <p>tapi ingin benar-benar bertemu, menatap matamu tanpa perantara layar.</p>
+                <p>Sometimes I close my eyes and imagine you standing right in front of me.</p>
+                <p>No distance, no delay, just you and me — in the same air, in the same heartbeat.</p>
+                <button class="button" onclick="showPart(4)">Buka Lebih Dalam...</button>
+            </div>
+            <div class="surprise-part" id="part4">
+                <p>Valentine ini terasa sederhana, tapi perasaanku tidak.</p>
+                <p>Ia penuh, sesak oleh keinginan untuk memelukmu,</p>
+                <p>untuk berkata pelan di dekat telingamu,</p>
+                <p>“I miss you more than words can explain.”</p>
+                <button class="button" onclick="showPart(5)">Masih Ada Lagi...</button>
+            </div>
+            <div class="surprise-part" id="part5">
+                <p>Jika jarak adalah ujian, maka rinduku adalah jawabannya.</p>
+                <p>Jika waktu mencoba menjauhkan, maka cintaku memilih untuk bertahan.</p>
+                <p>Aku ingin bertemu, bukan hanya untuk sehari,</p>
+                <p>tapi untuk menghapus semua jarak yang selama ini memisahkan kita.</p>
+                <button class="button" onclick="showPart(6)">Akhirnya...</button>
+            </div>
+            <div class="surprise-part" id="part6">
+                <p>Happy Valentine’s Day, my love.</p>
+                <p>Terima kasih sudah menjadi alasan kenapa aku tetap percaya pada cinta,</p>
+                <p>meski terpisah ruang dan waktu.</p>
+                <p>Dan untuk saat ini,</p>
+                <p>aku hanya bisa memberimu ini —</p>
+                <p>kata-kata yang lahir dari hati yang sangat ingin pulang kepadamu.</p>
+                <p>aku buat ini khusus kamu</p>
+            </div>
+            <div class="illustration">
+            </div>
+            <p>Sampai jumpa lagi, sayang dari aku cowomu yang ganteng dong pastinya, semoga kamu bisa ngabarin aku dan bisa gak terlalu slowresponn!!!!!. i love u sayang ❤️</p>
+        </div>
+    </div>
+
+    <script>
+        let currentSection = 0;
+        const sections = document.querySelectorAll('.section');
+
+        function nextSection(index) {
+            sections[currentSection].classList.remove('visible');
+            currentSection = index;
+            sections[currentSection].classList.add('visible');
+        }
+
+        function showPart(partNumber) {
+            const part = document.getElementById('part' + partNumber);
+            if (part) {
+                part.classList.add('show');
+            }
+        }
+
+        // Fade-in on scroll for elements
+        const fadeElements = document.querySelectorAll('.fade-in');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        });
+        fadeElements.forEach(el => observer.observe(el));
+
+        // Initial visibility
+        sections[0].classList.add('visible');
+        document.getElementById('part1').classList.add('show'); // First part always visible
+    </script>
+</body>
+</html>
